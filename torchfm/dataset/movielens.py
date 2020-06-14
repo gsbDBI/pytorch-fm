@@ -31,8 +31,8 @@ class MovieLens20MDataset(torch.utils.data.Dataset):
         return self.items[index], self.targets[index]
 
     def __preprocess_target(self, target):
-        target[target <= 3] = 0
-        target[target > 3] = 1
+        # target[target <= 3] = 0
+        # target[target > 3] = 1
         return target
 
 
